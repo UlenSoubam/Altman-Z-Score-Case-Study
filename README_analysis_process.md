@@ -2,15 +2,18 @@
 # Altman Z-Score Analysis Workflow
 
 ## Overview
-This project documents the workflow for calculating and analyzing the **Altman Z-Score** for **Reliance Industries Limited** using the **Google Data Analytics Process (APPASA)**.
+This study evaluates the financial health of Reliance Industries Limited (RIL) using the **Altman Z''-Score for Emerging Markets (1995 Model)**. Since India is an emerging market and Reliance is a well-diversified company, this model is the most appropriate for assessing its bankruptcy risk.
+A 10-year financial dataset was analyzed to track the Z''-Score trend, offering insights into Reliance's financial stability and performance. The analysis prioritizes accuracy over automation, using financial data directly from the company’s balance sheet and income statement.
+
 
 ## 1. **Ask**
-**Objective:** Assess the financial health and bankruptcy risk of **Reliance Industries Limited** using the **Altman Z-Score for Emerging Markets**.
+**Objective:** Assess the financial health and bankruptcy risk of **Reliance Industries Limited** using the **Altman Z-Score for Emerging Markets** using the **Google Data Analytics Process (APPASA)**.
 
 ## 2. **Prepare**
-**Data Source:** Reliance Industries Limited's **Annual Report** (Balance Sheet & Income Statement) from 2015 march to 2024 march
+Data Source: Reliance Industries' Balance Sheet & Income Statement (Direct extraction for accuracy).
+Timeframe: 10 years of financial data, 2015 march to 2024 march.
 **Extracted File:**
-- Extracted and [combed data](data/extracted_Data.csv) from financial statement → Contains raw financial data extracted from the annual report.
+- Extracted and [combed data](data/extracted_Data.csv) from financial statement → Contains raw financial data extracted from the annual report: total_non_current_assets,	total_current_assets,	total_assets,	total_non_current_liabilities,	total_current_liabilities,	total_liabilities,	retained_earnings,	profit_before_tax,	finance_cost,	ebit, book_value_of_equity.
 
 ## 3. **Process**
 ### Data Cleaning:
@@ -19,10 +22,18 @@ This project documents the workflow for calculating and analyzing the **Altman Z
 ### Calculations:
 - **Altman Z-Score Calculation**
   - Used [cleaned data](data/cleaned_re_extracted_data.csv).
+  - **Z′′=6.56(X₁) + 3.26(X₂) + 6.72(X₃) + 1.05(X₄)**
+    
+    where,
+    -	**X₁** = Liquidity → (Working Capital / Total Assets)
+    -	**X₂** = Profitability → (Retained Earnings / Total Assets)
+    -	**X₃** = Operating Efficiency → (EBIT / Total Assets)
+    -	**X₄** = Leverage & Solvency → (Book Value of Equity / Total Liabilities)
+
   - Saved the computed Z-Score in [Z score data](data/re_alt_zscore.csv)
 
 - **Financial Ratio Calculation**
-  - Derived key financial ratios from [cleaned data](data/cleaned_re_extracted_data.csv).
+  - Derived key financial ratios such as: **_Current Ratio, Debt-to-Equity Ratio, Debt Ratio, Interest Coverage Ratio, ROA, ROE, Retained Earnings Ratio_** from [cleaned data](data/cleaned_re_extracted_data.csv).
   - Saved output as [financial ratio](data/financial_ratios.csv) data.
 
 ## 4. **Analyze**

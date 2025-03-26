@@ -37,9 +37,9 @@ This project documents the workflow for calculating and analyzing the **Altman Z
   - Used `financial_ratios.csv` to analyze relationships between financial metrics.
 
 ## 5. **Share**
-
+![financial ratio](result/correlation_matrices_viz.png)
 #### Financial Ratio Correlation Heatmap
-![Financial Ratios Trend](result/correlation_matrices viz.png)
+
 
 - **Strong Negative Correlations:**
   - Debt-to-Equity Ratio and Current Ratio (-0.95) → Higher leverage is associated with lower liquidity.

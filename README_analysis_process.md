@@ -18,7 +18,8 @@ Timeframe: 10 years of financial data, 2015 march to 2024 march.
 ## 3. **Process**
 ### Data Cleaning:
 - Extracted and [combed data](data/extracted_Data.csv) → Saved as Reliance industries Limited [cleaned data](data/cleaned_re_extracted_data.csv)
-
+- Convert 'year' column to datetime format, remove duplicate, remove NaN row.
+_**Code:** [Data Cleaning](code/datacleaning_RE.py)_
 ### Calculations:
 - **Altman Z-Score Calculation**
   - Used [cleaned data](data/cleaned_re_extracted_data.csv).
@@ -31,22 +32,22 @@ Timeframe: 10 years of financial data, 2015 march to 2024 march.
     -	**X₄** = Leverage & Solvency → (Book Value of Equity / Total Liabilities)
 
   - Saved the computed Z-Score in [Z score data](data/re_alt_zscore.csv)
-
+_**Code:** [Altman Z Score](code/Alt_zscore_em.py)_
 - **Financial Ratio Calculation**
   - Derived key financial ratios such as: **_Current Ratio, Debt-to-Equity Ratio, Debt Ratio, Interest Coverage Ratio, ROA, ROE, Retained Earnings Ratio_** from [cleaned data](data/cleaned_re_extracted_data.csv).
   - Saved output as [financial ratio](data/financial_ratios.csv) data.
-
+_**Code:** [Financial Ratio](code/fratio_viz.py)_
 ## 4. **Analyze**
 ### Key Analyses:
 - **Altman Z-Score Trend:**
   - Used [Z score data](data/re_alt_zscore.csv) for trend visualization.
-
+_**Code:** [Z score data](code/alt_zcore_em_viz.py)_
 - **Financial Ratios Trend:**
   - Used [financial ratio](data/financial_ratios.csv) for financial ratio visualizations.
-
+_**Code:** [financial ratio trend](code/fratio_viz.py)_
 - **Correlation Matrix:**
   - Used [financial ratio](data/financial_ratios.csv) to analyze relationships between financial metrics.
-
+_**Code:** [Correlation](code/correlation_matrices.py)_
 ## 5. **Share**
 
 #### Financial Ratio Correlation Heatmap
@@ -75,7 +76,7 @@ Timeframe: 10 years of financial data, 2015 march to 2024 march.
 ![Altman Z''-Score Trend](result/viz1_zscore_trend.png)
 
 - **Distress Zone (Pre-2020):**
-  - The company was in financial distress (Z'' < 1.1) from 2016-2019.
+  - The company was in financial distress (Z'' < 1.1) from 2016-2020.
 
 - **Sharp Recovery Post-2020:**
   - Z'' spiked to 2.96 in 2021, pushing the company into the Grey Zone, indicating improved financial stability.

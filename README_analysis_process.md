@@ -37,10 +37,9 @@ This project documents the workflow for calculating and analyzing the **Altman Z
   - Used `financial_ratios.csv` to analyze relationships between financial metrics.
 
 ## 5. **Share**
-![financial ratio](result/correlation_matrices_viz.png)
+
 #### Financial Ratio Correlation Heatmap
-
-
+![financial ratio](result/correlation_matrices_viz.png)
 - **Strong Negative Correlations:**
   - Debt-to-Equity Ratio and Current Ratio (-0.95) → Higher leverage is associated with lower liquidity.
   - ROE and Retained Earnings Ratio (-0.77) → High ROE often means more distributed profits, reducing retained earnings.

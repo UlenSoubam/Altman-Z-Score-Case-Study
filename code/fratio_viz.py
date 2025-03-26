@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load financial data (Ensure your CSV has 'Year' as one column)
-df = pd.read_csv(r"C:\Users\ulens\git_hub\reliance_Altzscore\cleaned_re_extracted_data.csv")
+df = pd.read_csv("cleaned_re_extracted_data.csv")
 
 # Calculate financial ratios
 df["Current Ratio"] = df["total_current_assets"] / df["total_current_liabilities"]

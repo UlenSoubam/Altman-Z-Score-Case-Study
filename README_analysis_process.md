@@ -10,31 +10,31 @@ This project documents the workflow for calculating and analyzing the **Altman Z
 ## 2. **Prepare**
 **Data Source:** Reliance Industries Limited's **Annual Report** (Balance Sheet & Income Statement) from 2015 march to 2024 march
 **Extracted File:**
-- `extracted_data.csv` → Contains raw financial data extracted from the annual report.
+- Extracted and [combed data](data/extracted_Data.csv) from financial statement → Contains raw financial data extracted from the annual report.
 
 ## 3. **Process**
 ### Data Cleaning:
-- Cleaned `extracted_data.csv` → Saved as `clean_re_extracted_data.csv`.
+- Extracted and [combed data](data/extracted_Data.csv) → Saved as Reliance industries Limited [cleaned data](data/cleaned_re_extracted_data.csv)
 
 ### Calculations:
 - **Altman Z-Score Calculation**
-  - Used `clean_re_extracted_data.csv`.
-  - Saved the computed Z-Score in `re_alt_zscore.csv`.
+  - Used [cleaned data](data/cleaned_re_extracted_data.csv).
+  - Saved the computed Z-Score in [Z score data](data/re_alt_zscore.csv)
 
 - **Financial Ratio Calculation**
-  - Derived key financial ratios from `clean_re_extracted_data.csv`.
-  - Saved output as `financial_ratios.csv`.
+  - Derived key financial ratios from [cleaned data](data/cleaned_re_extracted_data.csv).
+  - Saved output as [financial ratio](data/financial_ratios.csv) data.
 
 ## 4. **Analyze**
 ### Key Analyses:
 - **Altman Z-Score Trend:**
-  - Used `re_alt_zscore.csv` for trend visualization.
+  - Used [Z score data](data/re_alt_zscore.csv) for trend visualization.
 
 - **Financial Ratios Trend:**
-  - Used `financial_ratios.csv` for financial ratio visualizations.
+  - Used [financial ratio](data/financial_ratios.csv) for financial ratio visualizations.
 
 - **Correlation Matrix:**
-  - Used `financial_ratios.csv` to analyze relationships between financial metrics.
+  - Used [financial ratio](data/financial_ratios.csv) to analyze relationships between financial metrics.
 
 ## 5. **Share**
 

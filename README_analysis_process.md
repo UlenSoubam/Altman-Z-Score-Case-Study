@@ -39,7 +39,7 @@ This project documents the workflow for calculating and analyzing the **Altman Z
 ## 5. **Share**
 
 #### Financial Ratio Correlation Heatmap
-![Financial Ratio Correlation Heatmap](correlation_matrices_viz.png)
+![Financial Ratios Trend](result/correlation_matrices viz.png)
 
 - **Strong Negative Correlations:**
   - Debt-to-Equity Ratio and Current Ratio (-0.95) → Higher leverage is associated with lower liquidity.
@@ -50,7 +50,7 @@ This project documents the workflow for calculating and analyzing the **Altman Z
   - ROE and ROA (0.86) → Return on equity is strongly linked to return on assets.
 
 #### Financial Ratios Trend Over Time
-![Financial Ratios Trend](f_ratio_trend.png)
+![Financial Ratios Trend](result/f_ratio_trend.png)
 
 - **Declining Leverage:**
   - Debt-to-Equity and Debt Ratios show a downward trend, suggesting Reliance Industries has been reducing its reliance on debt financing.
@@ -62,7 +62,7 @@ This project documents the workflow for calculating and analyzing the **Altman Z
   - ROE peaked in 2017-2019 but dropped post-2020, likely due to capital restructuring or lower net income margins.
 
 #### Altman Z''-Score Trend Over 10 Years
-![Altman Z''-Score Trend](viz1_zscore_trend.png)
+![Altman Z''-Score Trend](result/viz1_zscore_trend.png)
 
 - **Distress Zone (Pre-2020):**
   - The company was in financial distress (Z'' < 1.1) from 2016-2019.
@@ -86,17 +86,8 @@ This documentation provides an in-depth financial assessment, leveraging Altman 
 
 ---
 
-### Repository Structure
-```
-📂 altman_z_score_analysis
-│-- extracted_data.csv
-│-- clean_re_extracted_data.csv
-│-- re_alt_zscore.csv
-│-- financial_ratios.csv
-│-- altman_z_score_workflow.md (this file)
-```
 
-### Next Steps
+### Further Analysis
 - Further refine financial metric selection.
 - Explore sectoral comparisons using the Altman Z-Score.
 - Implement predictive modeling for financial distress analysis.

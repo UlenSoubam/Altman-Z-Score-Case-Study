@@ -20,7 +20,7 @@ Timeframe: 10 years of financial data, 2015 march to 2024 march.
 - Extracted and [combed data](data/extracted_Data.csv) → Saved as Reliance industries Limited [cleaned data](data/cleaned_re_extracted_data.csv)
 - Convert 'year' column to datetime format, remove duplicate, remove NaN row.
 
-_**Code:** [Data Cleaning](code/datacleaning_RE.py)_
+###### _**Code:** [Data Cleaning](code/datacleaning_RE.py)_
 
 ### Calculations:
 - **Altman Z-Score Calculation**
@@ -35,30 +35,30 @@ _**Code:** [Data Cleaning](code/datacleaning_RE.py)_
 
   - Saved the computed Z-Score in [Z score data](data/re_alt_zscore.csv)
     
-_**Code:** [Altman Z Score](code/Alt_zscore_em.py)_
+###### _**Code:** [Altman Z Score](code/Alt_zscore_em.py)_
 
 - **Financial Ratio Calculation**
   - Derived key financial ratios such as: **_Current Ratio, Debt-to-Equity Ratio, Debt Ratio, Interest Coverage Ratio, ROA, ROE, Retained Earnings Ratio_** from [cleaned data](data/cleaned_re_extracted_data.csv).
   - Saved output as [financial ratio](data/financial_ratios.csv) data.
     
-_**Code:** [Financial Ratio](code/fratio_viz.py)_
+###### _**Code:** [Financial Ratio](code/fratio_viz.py)_
 
 ## 4. **Analyze**
 ### Key Analyses:
 - **Altman Z-Score Trend:**
   - Used [Z score data](data/re_alt_zscore.csv) for trend visualization.
     
-_**Code:** [Z score data](code/alt_zcore_em_viz.py)_
+###### _**Code:** [Z score data](code/alt_zcore_em_viz.py)_
 
 - **Financial Ratios Trend:**
   - Used [financial ratio](data/financial_ratios.csv) for financial ratio visualizations.
     
-_**Code:** [financial ratio trend](code/fratio_viz.py)_
+###### _**Code:** [financial ratio trend](code/fratio_viz.py)_
 
 - **Correlation Matrix:**
   - Used [financial ratio](data/financial_ratios.csv) to analyze relationships between financial metrics.
     
-_**Code:** [Correlation](code/correlation_matrices.py)_
+###### _**Code:** [Correlation](code/correlation_matrices.py)_
 
 ## 5. **Share**
 

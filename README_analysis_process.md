@@ -5,7 +5,7 @@
 This study evaluates the financial health of Reliance Industries Limited (RIL) using the **Altman Z''-Score for Emerging Markets (1995 Model)**. Since India is an emerging market and Reliance is a well-diversified company, this model is the most appropriate for assessing its bankruptcy risk.
 A 10-year financial dataset was analyzed to track the Z''-Score trend, offering insights into Reliance's financial stability and performance. The analysis prioritizes accuracy over automation, using financial data directly from the company’s balance sheet and income statement.
 
-
+**_NOTE_:** Refer [financial concepts](info/financial_concept.md) to better understand the case study.
 ## 1. **Ask**
 **Objective:** Assess the financial health and bankruptcy risk of **Reliance Industries Limited** using the **Altman Z-Score for Emerging Markets** using the **Google Data Analytics Process (APPASA)**.
 

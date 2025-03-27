@@ -13,7 +13,7 @@ A 10-year financial dataset was analyzed to track the Z''-Score trend, offering 
 Data Source: Reliance Industries' Balance Sheet & Income Statement (Direct extraction for accuracy).
 Timeframe: 10 years of financial data, 2015 march to 2024 march.
 **Extracted File:**
-- Extracted and [combed data](data/extracted_Data.csv) from financial statement → Contains raw financial data extracted from the annual report: total_non_current_assets,	total_current_assets,	total_assets,	total_non_current_liabilities,	total_current_liabilities,	total_liabilities,	retained_earnings,	profit_before_tax,	finance_cost,	ebit, book_value_of_equity.
+- Extracted and [combed data](data/extracted_Data.csv) from [financial statement](data/financial_statements) → Contains raw financial data extracted from the annual report: total_non_current_assets,	total_current_assets,	total_assets,	total_non_current_liabilities,	total_current_liabilities,	total_liabilities,	retained_earnings,	profit_before_tax,	finance_cost,	ebit, book_value_of_equity.
 
 ## 3. **Process**
 ### Data Cleaning:
